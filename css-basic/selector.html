@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="lang">
+<head>
+	<meta charset="charset"/>
+	<title>Document</title>
+
+	<style>
+
+	/*全选*/
+	* { 
+		margin: 0;
+		padding: 0; 
+	}
+	
+	#hello {
+		color: blue;	
+	}
+
+	.completed {
+		text-decoration: line-through;
+	}
+	/* .red { */
+		/* color:red; */
+	/* } */
+
+	/* li.red { */
+		/* color: red; */
+	/* } */
+	.completed.red {
+		color: red;
+	}
+
+	</style>
+</head>
+<body>
+	<h1 class="red">セレクターの練習</h1>
+	<p id="hello">こんにちは中村さん</p>
+
+	<ul>
+		<li><label ><input type="checkbox" />読書</label></li>
+		<li class="completed"><input type="checkbox" checked />htmlの学習</li>
+		<li class="completed red"><input type="checkbox" checked />javascriptの学習</li>
+	</ul>
+	
+</body>
+</html>
