@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="lang">
+<head>
+	<meta charset="charset"/>
+	<title>Document</title>
+
+
+	<style>
+
+	.container {
+		/* display: grid; */
+		/* 创建3列 每一列宽度200px */
+		/* grid-template-columns: 200px 200px 200px; */
+		/* 设置auto的话会填满侧边的空间 */
+		/* grid-template-columns: 200px 200px auto; */
+		/* 自动填满3列 相同比例 */
+		/* grid-template-columns: 1fr 1fr 1r; */
+		/* 第一列的宽度是另外两列的两倍 */
+		/* grid-template-columns: 2fr 1fr 1fr; */
+		/* 列和列之间的间距 */
+		/* gap: 16px; */
+
+
+		display: grid;
+		/* grid-template-columns: repeat(3, 1fr); */
+		/* minmax 设置缩小时最小值和最大值 */
+		/* grid-template-columns: repeat(3,minmax(240px, 1fr)); */
+
+		/* auto-fit和auto-fill 自动调整列数*/
+		/* auto-fill 会用空白填充	auto-fit会缩放元素来填充 */
+		/* grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); */
+		grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+		
+		/* grid-template-rows: 200px 200px; */
+		/* gap: 16px; */
+		column-gap: 16px;
+		row-gap: 30px;
+		border: 1px solid;
+
+		/* gap
+		gap 全体的gap
+		column-gap column间的gap
+		row-gap row间的gap
+		
+		一起指定
+		gap: 30px 16px; row:30 col:16
+		*/
+
+		/* repeat函数
+		grid-template-columns: 1fr 1fr 1fr ==>  grid-template-columns: repeat(3, 1fr)
+		
+		 */
+		
+		
+	}
+	.item {
+		background-color: #ffa61c;
+		padding: 20px;
+	}
+		
+
+	</style>
+	
+</head>
+<body>
+
+<div class="container">
+
+<div class="item">item01</div>
+<div class="item">item02</div>
+<div class="item">item03</div>
+<div class="item">item04</div>
+<div class="item">item05</div>
+<div class="item">item06</div>
+<div class="item">item07</div>
+
+
+
+</div>
+	
+</body>
+</html>

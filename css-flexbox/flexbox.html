@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="llllllllls">
+<head>
+	<meta charset="charset"/>
+	<title>Document</title>
+
+	<style>
+	.container {
+		/* flexbox cheet sheet https://flexboxsheet.com/*/
+			
+		/* 设置flexbox */
+		display: flex;
+
+
+		/*元素排列的方向 默认:row*/
+		/* flex-direction: row; */
+		/*反向row排列*/
+		/* flex-direction: row-reverse; */
+		/*column排列 从上往下*/
+		/* flex-direction: column; */
+		/* column 的反向排列 */
+		/* flex-direction: column-reverse; */
+
+		/* 元素会不会自动换行  默认: nowrap 不换行 wrap 会自动换行*/
+		/* flex-wrap: nowrap; */
+		/* flex-wrap: wrap; */
+		/* 从后往前排列然后换行 */
+		/* flex-wrap: wrap-reverse; */
+
+
+		/*排列方式 默认: flex-start*/
+		/* justify-content: flex-start; 左对齐*/
+		/*右对齐*/
+		/* justify-content: flex-end; */
+		/*居中对齐*/
+		/* justify-content: center; */
+		/*首尾贴边，中间平均分隔*/
+		/* justify-content: space-between; */
+		/* 两边间距是中间分隔的一半 */
+		/* justify-content: space-around; */
+		/* 所有间距相等	 */
+		/* justify-content: space-evenly; */
+
+		/* 1vh: 整個浏览器窗口高度的1%
+		   100vh 占据整个窗口高度的100%*/
+		height: 100vh;
+
+		/* align-items 子元素在垂直方向怎么对齐 默认:stretch*/
+		/* align-items: stretch; */
+		/* 顶部对齐 */
+		/* align-items: flex-start; */
+		/* 底部对齐 */
+		/* align-items: flex-end; */
+		/* 所有子元素上下居中 */
+		/* align-items: center; */
+		/* 以文字基线对齐	 */
+		/* align-items: baseline; */
+
+		/* flex-wrap: wrap;/ */
+
+		/* 有多行内容是，这些多行内容在垂直方向上怎么分布 默认:stretch */
+		/* 拉满容器高度	 */
+		/* align-content: stretch; */
+		/* 多行集中在容器顶部 */
+		/* align-content: start; */
+		/* 多行集中在容器底部 */
+		/* align-content: end; */
+		/* 多行集中在容器中间 */
+		/* align-content: center; */
+		/* 顶行和底行贴边，中间平均分隔 */
+		/* align-content: space-between; */
+		/* 两边间距是中间分隔的一半 */
+		/* align-content: space-around; */
+		/* 所有间距相等	 */
+		/* align-content: space-evenly; */
+		
+		/* flex-flow 同时指定flex-direction 和flex-wrap 默认:row nowrap*/
+		flex-flow: row wrap;
+		
+		
+	}
+	.item {
+		background-color: #ffa61c;
+		margin: 10px;
+		padding:20px;
+		
+	}
+
+	/* .lg { */
+		/* font-size: xx-large */
+	/* } */
+
+	</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="item">item01</div>
+<div class="item lg">item02</div>
+<div class="item">item03</div>
+<div class="item">item04</div>
+<!-- <div class="item">item05</div> -->
+<div class="item">item06</div>
+<div class="item">item07</div>
+<div class="item">item08</div>
+<div class="item">item09</div>
+<div class="item">item10</div>
+<div class="item">item11</div>
+<div class="item">item12</div>
+<div class="item">item13</div>
+<div class="item">item14</div>
+<div class="item">item15</div>
+<div class="item">item16</div>
+<div class="item">item17</div>
+<div class="item">item18</div>
+<div class="item">item19</div>
+<div class="item">item20</div>
+
+</div>
+	
+</body>
+</html>
