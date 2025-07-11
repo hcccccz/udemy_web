@@ -28,7 +28,7 @@ h1, h2, h3, p {
 header {
   /* 中间对齐 */
   text-align: center;
-  
+
 }
 
 .photo {
@@ -74,12 +74,38 @@ h2 {
   height: 90px;
  border-radius: 50%;
  display: flex;
+ /* 水平方向对齐 */
  justify-content: center;
+ /* 垂直方向对齐 */
  align-items: center;
  color: #ffffff;
  font-size: 14px;
  font-weight: bold;
 }
 
+.works_box {
+  max-width: 450px;
+
+  margin: 40px auto;
+}
 
 
+.works_image {
+  /* 元素宽度为父元素的100% */
+  width: 100%;
+  height: auto;
+}
+
+.works_box h3 {
+  margin-top: 10px;
+}
+
+.works_box p {
+  margin-top: 7px;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
