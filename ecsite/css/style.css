@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+
+
+/* common */
+
+
+html {
+    font-size: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+
+a {
+    text-decoration: none;
+    /* 继承父元素的颜色 */
+    color: inherit;
+    /* 当透明度发生变化时 变化持续0.5s */
+    transition: opacity 0.5s;
+}
+
+a:hover {
+     opacity: 50%;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* header */
+ header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    width: 150px;
+}
+
+header form {
+    padding: 10px 15px;
+    width: 400px;
+    border: 1px solid #f1f1f1;
+    border-radius: 2em;;
+}
+
+header .wrapper nav ul {
+    display: flex;
+    gap: 7px;
+}
+
+header .wrapper nav ul li a {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    text-align: center;
+}
+
+nav ul li a i {
+    font-size: 20px;
+}
+
+
+/* main visual*/
+
+mv img {
+    min-height: 250px;
+    /* 裁剪多余部分，保持比例并填满容器 */
+    object-fit: cover;
+
+}
+
+/* goods */
+
+
+.goods {
+    padding-top: 50px;
+}
+.goods div ul {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.goods ul li h3 {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    max-width: 300px;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+
+}
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.sns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+small {
+    display: block;
+    margin: 20px;
+}
+
+
+
+@media(max-width: 750px) {
+
+    header form {
+        /* 宽度小于750 搜索栏消失 */
+        display: none;
+    }
+
+    .goods div ul {
+
+        grid-template-columns: 1fr 1fr;
+    }
+}
+

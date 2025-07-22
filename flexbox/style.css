@@ -1,0 +1,57 @@
+/* source: https://www.youtube.com/watch?v=phWxA89Dy94 */
+
+/* Base style  */
+
+/* 伪类选择器 相当于定义整个html
+在:root中定义css变量
+以--开头定义css变量
+*/
+:root {
+    --clr-dark: #0f172a;
+    --clr-light: #f1f5f9;
+    --clr-accent: #e11d48;
+}
+
+/* 所有元素和所有元素的伪元素设置为border-box
+border-box: 元素宽度=border+padding+内容宽度
+content-box: 元素宽度=内容宽度
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: "Roboto", sans-serif;
+    color: var(--clr-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    border: 10px solid var(--clr-dark);
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: #fb7185;
+    padding: 1em;
+    font-weight: 700;
+    color: var(--clr-light);
+    text-align: center;
+    border: 10px solid var(--clr-accent);
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+}
