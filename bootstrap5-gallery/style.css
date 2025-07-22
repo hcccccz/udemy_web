@@ -1,0 +1,6 @@
+.bg-img {
+    background-image: url("images/bOy4OPu98lI.jpg");
+    /* 铺满容器 */
+    background-size: cover;
+    background-position: center 30%;;
+}
